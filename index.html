@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimpleShop | E-Commerce App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🛍️ SimpleShop</h1>
+    <nav>
+      <select id="filter" onchange="filterProducts()">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+      <select id="sort" onchange="sortProducts()">
+        <option value="asc">Price: Low to High</option>
+        <option value="desc">Price: High to Low</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products" class="product-grid"></section>
+    <section id="cart">
+      <h2>🛒 Cart</h2>
+      <ul id="cartList"></ul>
+      <p>Total: ₹<span id="cartTotal">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SimpleShop by Sai Teja | Capstone Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
